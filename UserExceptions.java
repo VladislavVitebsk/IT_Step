@@ -4,7 +4,11 @@ public class UserExceptions {
     public static void main(String[] args) {
         int a= 1;
         //if (a%2==1) throw new NotEvenException("not even");
-        new Person("person");
+        try {
+            new Person("person");
+        } catch (NotCapitalLetterException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
 
