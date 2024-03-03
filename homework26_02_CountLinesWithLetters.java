@@ -21,7 +21,7 @@ public class CountLinesWithLetters {
                 }
             }
 
-            System.out.println("Total number of lines with 5 or more 'И' or 'и': " + count);
+            System.out.println("Общее количество строк с 5-ю и более буквами 'И' и 'и': " + count);
 
             reader.close();
         } catch (IOException e) {
